@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dhankesari Lottery Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h3>State Lotteries</h3>
+            <ul>
+                <li><a href="nagaland-state-lottery-result-1-pm.html">Nagaland State Lottery</a></li>
+                <li><a href="west-bengal-state-lottery-result.html">West Bengal State Lottery</a></li>
+                <li><a href="dhankesari.html" class="active">Dhankesari</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Dhankesari Lottery Result</h1>
+            <div class="result-card">
+                <h2>Today’s Draw Result</h2>
+                <div class="result-number">334455</div>
+                <div class="draw-date">Date: 08-06-2025</div>
+            </div>
+            <div class="pdf-link">
+                <a href="#" target="_blank">Download Official PDF</a>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html').then(res => res.text()).then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+        fetch('footer.html').then(res => res.text()).then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+</body>
+
+</html>
